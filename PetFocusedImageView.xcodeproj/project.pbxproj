@@ -14,6 +14,9 @@
 		042C6A5B22B8B357006F914E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042C6A5A22B8B357006F914E /* Assets.xcassets */; };
 		042C6A5E22B8B357006F914E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042C6A5C22B8B357006F914E /* LaunchScreen.storyboard */; };
 		042C6A6922B8B357006F914E /* PetFocusedImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C6A6822B8B357006F914E /* PetFocusedImageViewTests.swift */; };
+		042C6A7422B8B4FC006F914E /* PetFocusedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C6A7322B8B4FC006F914E /* PetFocusedImageView.swift */; };
+		042C6A7622B8B602006F914E /* PetDetectionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C6A7522B8B602006F914E /* PetDetectionOperation.swift */; };
+		042C6A7822B8CC65006F914E /* PetFocusedImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C6A7722B8CC65006F914E /* PetFocusedImageCropper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		042C6A6422B8B357006F914E /* PetFocusedImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetFocusedImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042C6A6822B8B357006F914E /* PetFocusedImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFocusedImageViewTests.swift; sourceTree = "<group>"; };
 		042C6A6A22B8B357006F914E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042C6A7322B8B4FC006F914E /* PetFocusedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFocusedImageView.swift; sourceTree = "<group>"; };
+		042C6A7522B8B602006F914E /* PetDetectionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetectionOperation.swift; sourceTree = "<group>"; };
+		042C6A7722B8CC65006F914E /* PetFocusedImageCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFocusedImageCropper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 				042C6A5A22B8B357006F914E /* Assets.xcassets */,
 				042C6A5C22B8B357006F914E /* LaunchScreen.storyboard */,
 				042C6A5F22B8B357006F914E /* Info.plist */,
+				042C6A7322B8B4FC006F914E /* PetFocusedImageView.swift */,
+				042C6A7522B8B602006F914E /* PetDetectionOperation.swift */,
+				042C6A7722B8CC65006F914E /* PetFocusedImageCropper.swift */,
 			);
 			path = PetFocusedImageView;
 			sourceTree = "<group>";
@@ -200,9 +209,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042C6A7422B8B4FC006F914E /* PetFocusedImageView.swift in Sources */,
 				042C6A5622B8B354006F914E /* ViewController.swift in Sources */,
+				042C6A7622B8B602006F914E /* PetDetectionOperation.swift in Sources */,
 				042C6A5222B8B354006F914E /* AppDelegate.swift in Sources */,
 				042C6A5422B8B354006F914E /* SceneDelegate.swift in Sources */,
+				042C6A7822B8CC65006F914E /* PetFocusedImageCropper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
