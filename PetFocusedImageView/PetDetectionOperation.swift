@@ -6,20 +6,26 @@ import UIKit
 import Vision
 
 class PetDetectionOperation: Operation {
-    init?(image: UIImage) {
+    init(image: UIImage, completionHandler: @escaping (([PetObservation]?, Error?) -> Void)) {
         self.image = image
-        guard let cgImage = image.cgImage else { return nil }
-        self.imageRequestHandler = VNImageRequestHandler(cgImage: cgImage, orientation: image.imageOrientation.cgImagePropertyOrientation)
+        self.completionHandler = completionHandler
+//        guard let cgImage = image.cgImage else {
+//
+//            return
+//        }
+//
+//        self.imageRequestHandler =
 
         super.init()
     }
 
-    var petObservations: [PetObservation]?
+//    var petObservations: [PetObservation]?
 
     override func start() {
         let imageRequest = VNDetectAnimalRectanglesRequest { [weak self] request, error in
             guard let results = request.results else {
-                PetDetectionOperation.log("error getting animal rectangles: \(error?.localizedDescription ?? "(null)")", type: .error)
+                self?.completionHandler(nil, error)
+//                PetDetectionOperation.log("error getting animal rectangles: \(error?.localizedDescription ?? "(null)")", type: .error)
                 self?._finished = true
                 self?._executing = false
                 return
@@ -27,17 +33,19 @@ class PetDetectionOperation: Operation {
 
 
             let recognizedObjectObservations = results.compactMap { $0 as? VNRecognizedObjectObservation }
-            self?.petObservations = recognizedObjectObservations.compactMap { PetObservation($0, in: self!.image)}
+            let petObservations = recognizedObjectObservations.compactMap { PetObservation($0, in: self!.image)}
+            self?.completionHandler(petObservations, nil)
 
             self?._finished = true
             self?._executing = false
         }
 
         do {
-            try imageRequestHandler.perform([imageRequest])
+            try imageRequestHandler?.perform([imageRequest])
             _executing = true
         } catch {
-            PetDetectionOperation.log("error starting image request: \(error.localizedDescription)", type: .error)
+            completionHandler(nil, error)
+//            PetDetectionOperation.log("error starting image request: \(error.localizedDescription)", type: .error)
             _finished = true
             _executing = false
         }
@@ -53,7 +61,16 @@ class PetDetectionOperation: Operation {
     // MARK: Boilerplate
 
     private let image: UIImage
-    private let imageRequestHandler: VNImageRequestHandler
+    private let completionHandler: ([PetObservation]?, Error?) -> Void
+    
+    private lazy var imageRequestHandler: VNImageRequestHandler? = {
+        guard let cgImage = image.cgImage else {
+            assertionFailure("No CGImage available for detection source image")
+            return nil
+        }
+        
+        return VNImageRequestHandler(cgImage: cgImage, orientation: image.imageOrientation.cgImagePropertyOrientation)
+    }()
 
     override var isAsynchronous: Bool { return true }
 

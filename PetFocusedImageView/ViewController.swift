@@ -6,20 +6,11 @@ import UIKit
 class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
-        guard let detectionOperation = detectionOperation else { return }
-
-        let finalizeOperation = BlockOperation { [weak self] in
-            guard let detectionOperation = self?.detectionOperation else { return }
-            dump(detectionOperation.petObservations)
+        guard let image = UIImage(named: "doggo") else { fatalError("extreme lack of doggo") }
+        PetFocusedImageCropper().crop(image, aspectRatio: 1) { (image, error) in
+            dump(image)
         }
-
-        finalizeOperation.addDependency(detectionOperation)
-        operationQueue.addOperations([detectionOperation, finalizeOperation], waitUntilFinished: false)
     }
-
-    // MARK: Boilerplate
-
-    private let detectionOperation = PetDetectionOperation(image: UIImage(named: "boofer")!)
-    private let operationQueue = OperationQueue()
+    
+    private let cropper = PetFocusedImageCropper()
 }
