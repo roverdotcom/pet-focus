@@ -22,7 +22,7 @@
                                     <constraint firstAttribute="width" secondItem="CKJ-DK-Bgn" secondAttribute="height" multiplier="1:1" id="zrc-v1-HjO"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doggo" translatesAutoresizingMaskIntoConstraints="NO" id="V5O-Nt-g0t">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doggo" translatesAutoresizingMaskIntoConstraints="NO" id="V5O-Nt-g0t" customClass="PetFocusedImageView" customModule="PetFocusedImageView" customModuleProvider="target">
                                 <rect key="frame" x="107" y="483" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="V5O-Nt-g0t" secondAttribute="height" multiplier="1:1" id="Ded-pC-ZEt"/>
