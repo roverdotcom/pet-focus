@@ -14,7 +14,8 @@
 		042C6A5B22B8B357006F914E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042C6A5A22B8B357006F914E /* Assets.xcassets */; };
 		042C6A5E22B8B357006F914E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 042C6A5C22B8B357006F914E /* LaunchScreen.storyboard */; };
 		042C6A6922B8B357006F914E /* PetFocusedImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C6A6822B8B357006F914E /* PetFocusedImageViewTests.swift */; };
-		04A57C4922C31961001D88AF /* PetFocus in Frameworks */ = {isa = PBXBuildFile; productRef = 04A57C4822C31961001D88AF /* PetFocus */; };
+		04A57C7922C32398001D88AF /* .. in Resources */ = {isa = PBXBuildFile; fileRef = 04A57C7822C32398001D88AF /* .. */; };
+		04A57C7B22C32530001D88AF /* PetFocus in Frameworks */ = {isa = PBXBuildFile; productRef = 04A57C7A22C32530001D88AF /* PetFocus */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		042C6A6422B8B357006F914E /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042C6A6822B8B357006F914E /* PetFocusedImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFocusedImageViewTests.swift; sourceTree = "<group>"; };
 		042C6A6A22B8B357006F914E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		04A57C4622C31657001D88AF /* PetFocus */ = {isa = PBXFileReference; lastKnownFileType = text; path = PetFocus; sourceTree = SOURCE_ROOT; };
+		04A57C7822C32398001D88AF /* .. */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A57C4922C31961001D88AF /* PetFocus in Frameworks */,
+				04A57C7B22C32530001D88AF /* PetFocus in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +84,7 @@
 		042C6A5022B8B354006F914E /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				04A57C4622C31657001D88AF /* PetFocus */,
+				04A57C7822C32398001D88AF /* .. */,
 				042C6A5122B8B354006F914E /* AppDelegate.swift */,
 				042C6A5322B8B354006F914E /* SceneDelegate.swift */,
 				042C6A5522B8B354006F914E /* ViewController.swift */,
@@ -92,7 +93,7 @@
 				042C6A5C22B8B357006F914E /* LaunchScreen.storyboard */,
 				042C6A5F22B8B357006F914E /* Info.plist */,
 			);
-			path = Demo;
+			name = Demo;
 			sourceTree = "<group>";
 		};
 		042C6A6722B8B357006F914E /* DemoTests */ = {
@@ -128,7 +129,7 @@
 			);
 			name = Demo;
 			packageProductDependencies = (
-				04A57C4822C31961001D88AF /* PetFocus */,
+				04A57C7A22C32530001D88AF /* PetFocus */,
 			);
 			productName = PetFocusedImageView;
 			productReference = 042C6A4E22B8B354006F914E /* Demo.app */;
@@ -198,6 +199,7 @@
 				042C6A5E22B8B357006F914E /* LaunchScreen.storyboard in Resources */,
 				042C6A5B22B8B357006F914E /* Assets.xcassets in Resources */,
 				042C6A5922B8B354006F914E /* Main.storyboard in Resources */,
+				04A57C7922C32398001D88AF /* .. in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +381,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8XD9NJZ88;
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,7 +399,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8XD9NJZ88;
-				INFOPLIST_FILE = Demo/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,7 +418,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8XD9NJZ88;
-				INFOPLIST_FILE = DemoTests/Info.plist;
+				INFOPLIST_FILE = Demo/DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +439,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8XD9NJZ88;
-				INFOPLIST_FILE = DemoTests/Info.plist;
+				INFOPLIST_FILE = Demo/DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,7 +486,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		04A57C4822C31961001D88AF /* PetFocus */ = {
+		04A57C7A22C32530001D88AF /* PetFocus */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = PetFocus;
 		};
