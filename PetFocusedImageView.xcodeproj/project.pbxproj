@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		042C6A4E22B8B354006F914E /* PetFocusedImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetFocusedImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		042C6A4E22B8B354006F914E /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		042C6A5122B8B354006F914E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		042C6A5322B8B354006F914E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		042C6A5522B8B354006F914E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		042C6A5A22B8B357006F914E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042C6A5D22B8B357006F914E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		042C6A5F22B8B357006F914E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		042C6A6422B8B357006F914E /* PetFocusedImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetFocusedImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		042C6A6422B8B357006F914E /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		042C6A6822B8B357006F914E /* PetFocusedImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFocusedImageViewTests.swift; sourceTree = "<group>"; };
 		042C6A6A22B8B357006F914E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A57C4622C31657001D88AF /* PetFocus */ = {isa = PBXFileReference; lastKnownFileType = text; path = PetFocus; sourceTree = SOURCE_ROOT; };
@@ -64,8 +64,8 @@
 		042C6A4522B8B354006F914E = {
 			isa = PBXGroup;
 			children = (
-				042C6A5022B8B354006F914E /* PetFocusedImageView */,
-				042C6A6722B8B357006F914E /* PetFocusedImageViewTests */,
+				042C6A5022B8B354006F914E /* Demo */,
+				042C6A6722B8B357006F914E /* DemoTests */,
 				042C6A4F22B8B354006F914E /* Products */,
 				04A57C4722C31961001D88AF /* Frameworks */,
 			);
@@ -74,13 +74,13 @@
 		042C6A4F22B8B354006F914E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				042C6A4E22B8B354006F914E /* PetFocusedImageView.app */,
-				042C6A6422B8B357006F914E /* PetFocusedImageViewTests.xctest */,
+				042C6A4E22B8B354006F914E /* Demo.app */,
+				042C6A6422B8B357006F914E /* DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		042C6A5022B8B354006F914E /* PetFocusedImageView */ = {
+		042C6A5022B8B354006F914E /* Demo */ = {
 			isa = PBXGroup;
 			children = (
 				04A57C4622C31657001D88AF /* PetFocus */,
@@ -92,16 +92,16 @@
 				042C6A5C22B8B357006F914E /* LaunchScreen.storyboard */,
 				042C6A5F22B8B357006F914E /* Info.plist */,
 			);
-			path = PetFocusedImageView;
+			path = Demo;
 			sourceTree = "<group>";
 		};
-		042C6A6722B8B357006F914E /* PetFocusedImageViewTests */ = {
+		042C6A6722B8B357006F914E /* DemoTests */ = {
 			isa = PBXGroup;
 			children = (
 				042C6A6822B8B357006F914E /* PetFocusedImageViewTests.swift */,
 				042C6A6A22B8B357006F914E /* Info.plist */,
 			);
-			path = PetFocusedImageViewTests;
+			path = DemoTests;
 			sourceTree = "<group>";
 		};
 		04A57C4722C31961001D88AF /* Frameworks */ = {
@@ -114,9 +114,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		042C6A4D22B8B354006F914E /* PetFocusedImageView */ = {
+		042C6A4D22B8B354006F914E /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 042C6A6D22B8B357006F914E /* Build configuration list for PBXNativeTarget "PetFocusedImageView" */;
+			buildConfigurationList = 042C6A6D22B8B357006F914E /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
 				042C6A4A22B8B354006F914E /* Sources */,
 				042C6A4B22B8B354006F914E /* Frameworks */,
@@ -126,17 +126,17 @@
 			);
 			dependencies = (
 			);
-			name = PetFocusedImageView;
+			name = Demo;
 			packageProductDependencies = (
 				04A57C4822C31961001D88AF /* PetFocus */,
 			);
 			productName = PetFocusedImageView;
-			productReference = 042C6A4E22B8B354006F914E /* PetFocusedImageView.app */;
+			productReference = 042C6A4E22B8B354006F914E /* Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		042C6A6322B8B357006F914E /* PetFocusedImageViewTests */ = {
+		042C6A6322B8B357006F914E /* DemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 042C6A7022B8B357006F914E /* Build configuration list for PBXNativeTarget "PetFocusedImageViewTests" */;
+			buildConfigurationList = 042C6A7022B8B357006F914E /* Build configuration list for PBXNativeTarget "DemoTests" */;
 			buildPhases = (
 				042C6A6022B8B357006F914E /* Sources */,
 				042C6A6122B8B357006F914E /* Frameworks */,
@@ -147,9 +147,9 @@
 			dependencies = (
 				042C6A6622B8B357006F914E /* PBXTargetDependency */,
 			);
-			name = PetFocusedImageViewTests;
+			name = DemoTests;
 			productName = PetFocusedImageViewTests;
-			productReference = 042C6A6422B8B357006F914E /* PetFocusedImageViewTests.xctest */;
+			productReference = 042C6A6422B8B357006F914E /* DemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -184,8 +184,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				042C6A4D22B8B354006F914E /* PetFocusedImageView */,
-				042C6A6322B8B357006F914E /* PetFocusedImageViewTests */,
+				042C6A4D22B8B354006F914E /* Demo */,
+				042C6A6322B8B357006F914E /* DemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,7 +234,7 @@
 /* Begin PBXTargetDependency section */
 		042C6A6622B8B357006F914E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 042C6A4D22B8B354006F914E /* PetFocusedImageView */;
+			target = 042C6A4D22B8B354006F914E /* Demo */;
 			targetProxy = 042C6A6522B8B357006F914E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -379,7 +379,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8XD9NJZ88;
-				INFOPLIST_FILE = PetFocusedImageView/Info.plist;
+				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,7 +397,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8XD9NJZ88;
-				INFOPLIST_FILE = PetFocusedImageView/Info.plist;
+				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -416,7 +416,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8XD9NJZ88;
-				INFOPLIST_FILE = PetFocusedImageViewTests/Info.plist;
+				INFOPLIST_FILE = DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,7 +426,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetFocusedImageView.app/PetFocusedImageView";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
 			};
 			name = Debug;
 		};
@@ -437,7 +437,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8XD9NJZ88;
-				INFOPLIST_FILE = PetFocusedImageViewTests/Info.plist;
+				INFOPLIST_FILE = DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,7 +447,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PetFocusedImageView.app/PetFocusedImageView";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
 			};
 			name = Release;
 		};
@@ -463,7 +463,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		042C6A6D22B8B357006F914E /* Build configuration list for PBXNativeTarget "PetFocusedImageView" */ = {
+		042C6A6D22B8B357006F914E /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				042C6A6E22B8B357006F914E /* Debug */,
@@ -472,7 +472,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		042C6A7022B8B357006F914E /* Build configuration list for PBXNativeTarget "PetFocusedImageViewTests" */ = {
+		042C6A7022B8B357006F914E /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				042C6A7122B8B357006F914E /* Debug */,
