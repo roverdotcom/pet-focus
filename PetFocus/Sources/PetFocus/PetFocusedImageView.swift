@@ -4,8 +4,8 @@
 import UIKit
 import Vision
 
-class PetFocusedImageView: UIImageView {
-    override var image: UIImage? {
+public class PetFocusedImageView: UIImageView {
+    public override var image: UIImage? {
         get { return super.image }
         set(newImage) {
             guard let newImage = newImage else { super.image = nil; return }
@@ -18,7 +18,7 @@ class PetFocusedImageView: UIImageView {
         }
     }
 
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         super.awakeFromNib()
 
         if let image = image {
