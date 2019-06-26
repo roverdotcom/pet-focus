@@ -9,23 +9,13 @@ class PetDetectionOperation: Operation {
     init(image: UIImage, completionHandler: @escaping (([PetObservation]?, Error?) -> Void)) {
         self.image = image
         self.completionHandler = completionHandler
-//        guard let cgImage = image.cgImage else {
-//
-//            return
-//        }
-//
-//        self.imageRequestHandler =
-
         super.init()
     }
-
-//    var petObservations: [PetObservation]?
 
     override func start() {
         let imageRequest = VNDetectAnimalRectanglesRequest { [weak self] request, error in
             guard let results = request.results else {
                 self?.completionHandler(nil, error)
-//                PetDetectionOperation.log("error getting animal rectangles: \(error?.localizedDescription ?? "(null)")", type: .error)
                 self?._finished = true
                 self?._executing = false
                 return
