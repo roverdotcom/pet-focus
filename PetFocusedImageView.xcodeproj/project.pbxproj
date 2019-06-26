@@ -17,6 +17,9 @@
 		042C6A7422B8B4FC006F914E /* PetFocusedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C6A7322B8B4FC006F914E /* PetFocusedImageView.swift */; };
 		042C6A7622B8B602006F914E /* PetDetectionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C6A7522B8B602006F914E /* PetDetectionOperation.swift */; };
 		042C6A7822B8CC65006F914E /* PetFocusedImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042C6A7722B8CC65006F914E /* PetFocusedImageCropper.swift */; };
+		04A57C4122C311A6001D88AF /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A57C4022C311A6001D88AF /* UIImageExtensions.swift */; };
+		04A57C4322C3126E001D88AF /* CGGeometryExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A57C4222C3126E001D88AF /* CGGeometryExtensions.swift */; };
+		04A57C4522C312E6001D88AF /* PetOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A57C4422C312E6001D88AF /* PetOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		042C6A7322B8B4FC006F914E /* PetFocusedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFocusedImageView.swift; sourceTree = "<group>"; };
 		042C6A7522B8B602006F914E /* PetDetectionOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDetectionOperation.swift; sourceTree = "<group>"; };
 		042C6A7722B8CC65006F914E /* PetFocusedImageCropper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFocusedImageCropper.swift; sourceTree = "<group>"; };
+		04A57C4022C311A6001D88AF /* UIImageExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		04A57C4222C3126E001D88AF /* CGGeometryExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGGeometryExtensions.swift; sourceTree = "<group>"; };
+		04A57C4422C312E6001D88AF /* PetOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,9 @@
 				042C6A7322B8B4FC006F914E /* PetFocusedImageView.swift */,
 				042C6A7522B8B602006F914E /* PetDetectionOperation.swift */,
 				042C6A7722B8CC65006F914E /* PetFocusedImageCropper.swift */,
+				04A57C4022C311A6001D88AF /* UIImageExtensions.swift */,
+				04A57C4222C3126E001D88AF /* CGGeometryExtensions.swift */,
+				04A57C4422C312E6001D88AF /* PetOperation.swift */,
 			);
 			path = PetFocusedImageView;
 			sourceTree = "<group>";
@@ -211,10 +220,13 @@
 			files = (
 				042C6A7422B8B4FC006F914E /* PetFocusedImageView.swift in Sources */,
 				042C6A5622B8B354006F914E /* ViewController.swift in Sources */,
+				04A57C4122C311A6001D88AF /* UIImageExtensions.swift in Sources */,
+				04A57C4322C3126E001D88AF /* CGGeometryExtensions.swift in Sources */,
 				042C6A7622B8B602006F914E /* PetDetectionOperation.swift in Sources */,
 				042C6A5222B8B354006F914E /* AppDelegate.swift in Sources */,
 				042C6A5422B8B354006F914E /* SceneDelegate.swift in Sources */,
 				042C6A7822B8CC65006F914E /* PetFocusedImageCropper.swift in Sources */,
+				04A57C4522C312E6001D88AF /* PetOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
