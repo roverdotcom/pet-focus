@@ -3,6 +3,7 @@
 
 import UIKit
 
+@available(iOS 13.0, *)
 class PetFocusedImageCropper {
     func crop(_ image: UIImage, aspectRatio: CGFloat, completionHandler: @escaping ((UIImage?, Error?) -> Void)) {
         let detectionOperation = PetDetectionOperation(image: image) { observations, error in

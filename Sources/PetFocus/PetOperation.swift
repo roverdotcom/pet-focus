@@ -4,6 +4,7 @@
 import UIKit
 import Vision
 
+@available(iOS 12.0, *)
 struct PetObservation: Equatable {
     init(_ petObservation: VNRecognizedObjectObservation, in image: UIImage) {
         let boundingBox = petObservation.boundingBox

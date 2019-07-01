@@ -9,12 +9,7 @@ public class PetFocusedImageView: UIImageView {
         get { return super.image }
         set(newImage) {
             guard let newImage = newImage else { super.image = nil; return }
-            PetFocusedImageView.cropper.crop(newImage, aspectRatio: 1) { finalImage, error in
-                guard let finalImage = finalImage else { super.image = newImage; return }
-                DispatchQueue.main.async {
-                    super.image = finalImage
-                }
-            }
+            setImage(from: newImage)
         }
     }
 
@@ -22,14 +17,23 @@ public class PetFocusedImageView: UIImageView {
         super.awakeFromNib()
 
         if let image = image {
-            PetFocusedImageView.cropper.crop(image, aspectRatio: 1) { finalImage, error in
+            setImage(from: image)
+        }
+    }
+
+    private func setImage(from originalImage: UIImage) {
+        if #available(iOS 13.0, *) {
+            PetFocusedImageView.cropper.crop(originalImage, aspectRatio: 1) { finalImage, error in
                 guard let finalImage = finalImage else { return }
                 DispatchQueue.main.async {
                     super.image = finalImage
                 }
             }
+        } else {
+            super.image = originalImage
         }
     }
 
+    @available(iOS 13.0, *)
     private static let cropper = PetFocusedImageCropper()
 }

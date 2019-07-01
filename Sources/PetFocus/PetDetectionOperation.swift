@@ -5,6 +5,7 @@ import os.log
 import UIKit
 import Vision
 
+@available(iOS 13.0, *)
 class PetDetectionOperation: Operation {
     init(image: UIImage, completionHandler: @escaping (([PetObservation]?, Error?) -> Void)) {
         self.image = image
