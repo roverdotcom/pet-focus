@@ -17,17 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doggo" translatesAutoresizingMaskIntoConstraints="NO" id="CKJ-DK-Bgn">
-                                <rect key="frame" x="107" y="223" width="200" height="200"/>
+                                <rect key="frame" x="111" y="231" width="192" height="192"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="0wP-Q5-Gdu"/>
-                                    <constraint firstAttribute="width" secondItem="CKJ-DK-Bgn" secondAttribute="height" multiplier="1:1" id="zrc-v1-HjO"/>
+                                    <constraint firstAttribute="height" constant="192" id="0wP-Q5-Gdu"/>
+                                    <constraint firstAttribute="width" secondItem="CKJ-DK-Bgn" secondAttribute="height" id="zrc-v1-HjO"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="doggo" translatesAutoresizingMaskIntoConstraints="NO" id="V5O-Nt-g0t" customClass="PetFocusedImageView" customModule="PetFocus">
-                                <rect key="frame" x="107" y="483" width="200" height="200"/>
+                                <rect key="frame" x="111" y="483" width="192" height="192"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="V5O-Nt-g0t" secondAttribute="height" multiplier="1:1" id="Ded-pC-ZEt"/>
-                                    <constraint firstAttribute="width" constant="200" id="gJ8-0H-fCJ"/>
+                                    <constraint firstAttribute="width" secondItem="V5O-Nt-g0t" secondAttribute="height" id="Ded-pC-ZEt"/>
+                                    <constraint firstAttribute="height" constant="192" id="gJ8-0H-fCJ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
