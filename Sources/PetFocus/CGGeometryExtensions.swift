@@ -14,6 +14,11 @@ extension CGRect {
         return CGRect(x: rect.origin.x * multiplier, y: rect.origin.y * multiplier, width: rect.size.width * multiplier, height: rect.size.height * multiplier)
     }
 
+    init(center: CGPoint, size: CGSize) {
+        let origin = CGPoint(x: center.x - (size.width / 2.0), y: center.y - (size.height / 2.0))
+        self.init(origin: origin, size: size)
+    }
+
     var center: CGPoint {
         return CGPoint(x: midX, y: midY)
     }

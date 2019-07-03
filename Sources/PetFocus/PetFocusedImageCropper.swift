@@ -1,11 +1,12 @@
 //  Created by Geoff Pado on 6/18/19.
 //  Copyright © 2019 Geoff Pado. All rights reserved.
 
+import AVFoundation
 import UIKit
 
 @available(iOS 13.0, *)
 class PetFocusedImageCropper {
-    func crop(_ image: UIImage, aspectRatio: CGFloat, completionHandler: @escaping ((UIImage?, Error?) -> Void)) {
+    func crop(_ image: UIImage, aspectRatio: CGSize, completionHandler: @escaping ((UIImage?, Error?) -> Void)) {
         let detectionOperation = PetDetectionOperation(image: image) { observations, error in
             // if an error occurred, error out
             guard let observations = observations else {
@@ -33,11 +34,8 @@ class PetFocusedImageCropper {
             let dogCenter = petBounds.center
             
             // Create a crop rectangle of the appropriate aspect ratio centered on the dog center
-            #warning("Does not respect actual aspect ratio")
-            let dimension = min(actualImageSize.width, actualImageSize.height)
-            let cropSize = CGSize(width: dimension, height: dimension)
-            let cropOrigin = CGPoint(x: dogCenter.x - (dimension / 2.0), y: dogCenter.y - (dimension / 2.0))
-            var cropRect = CGRect(origin: cropOrigin, size: cropSize)
+            let maxRect = AVMakeRect(aspectRatio: aspectRatio, insideRect: CGRect(origin: .zero, size: actualImageSize))
+            var cropRect = CGRect(center: dogCenter, size: maxRect.size)
             
             // Shift the rectangle until it is entirely within the image (i.e., fix any origin < minX/Y or origin+size > maxX/Y)
             if cropRect.origin.x < 0 {
@@ -57,7 +55,7 @@ class PetFocusedImageCropper {
             }
             
             // Grab the portion of the image that is in that rect and return
-            let renderer = UIGraphicsImageRenderer(size: cropSize)
+            let renderer = UIGraphicsImageRenderer(size: cropRect.size)
             let finalImage = renderer.image { context in
                 image.draw(at: CGPoint(x: cropRect.origin.x * -1, y: cropRect.origin.y * -1))
             }
