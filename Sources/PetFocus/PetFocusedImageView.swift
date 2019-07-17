@@ -4,7 +4,7 @@
 import UIKit
 import Vision
 
-public class PetFocusedImageView: UIImageView {
+@objc public class PetFocusedImageView: UIImageView {
     public override var image: UIImage? {
         get { return super.image }
         set(newImage) {
