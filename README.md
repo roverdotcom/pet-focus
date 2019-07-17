@@ -19,7 +19,7 @@ https://github.com/roverdotcom/pet-focus.git
 If your project doesn't currently use Swift Package Manager, you can also use [Carthage](https://www.github.com/Carthage/Carthage). If your project is already using Carthage, just add PetFocus to your Cartfile:
 
 ```ruby
-github "roverdotcom/pet-focus" == 0.0.1
+github "roverdotcom/pet-focus" == 0.0.2
 ```
 
 ### CocoaPods

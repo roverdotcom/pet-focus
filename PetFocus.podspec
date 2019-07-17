@@ -1,7 +1,7 @@
 # coding: utf-8
 Pod::Spec.new do |spec|
   spec.name         = "PetFocus"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "An image view that automatically centers on dogs and cats."
 
   spec.description  = <<-DESC
