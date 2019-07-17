@@ -22,7 +22,6 @@ class PetDetectionOperation: Operation {
                 return
             }
 
-
             let recognizedObjectObservations = results.compactMap { $0 as? VNRecognizedObjectObservation }
             let petObservations = recognizedObjectObservations.compactMap { PetObservation($0, in: self!.image)}
             self?.completionHandler(petObservations, nil)
@@ -53,13 +52,13 @@ class PetDetectionOperation: Operation {
 
     private let image: UIImage
     private let completionHandler: ([PetObservation]?, Error?) -> Void
-    
+
     private lazy var imageRequestHandler: VNImageRequestHandler? = {
         guard let cgImage = image.cgImage else {
             assertionFailure("No CGImage available for detection source image")
             return nil
         }
-        
+
         return VNImageRequestHandler(cgImage: cgImage, orientation: image.imageOrientation.cgImagePropertyOrientation)
     }()
 

@@ -41,7 +41,6 @@ extension CGRect {
             let newRectY = (fittingRect.height - newRectHeight) / 2
 
             return CGRect(x: newRectX, y: newRectY, width: newRectWidth, height: newRectHeight)
-
         } else { //same aspect ratio
             return fittingRect
         }

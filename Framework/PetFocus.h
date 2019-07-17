@@ -8,3 +8,5 @@ FOUNDATION_EXPORT double FrameworkVersionNumber;
 
 //! Project version string for Framework.
 FOUNDATION_EXPORT const unsigned char FrameworkVersionString[];
+
+#import <PetFocus/PetFocus-Swift.h>
