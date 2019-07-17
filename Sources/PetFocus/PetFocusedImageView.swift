@@ -23,7 +23,7 @@ public class PetFocusedImageView: UIImageView {
 
     private func setImage(from originalImage: UIImage) {
         if #available(iOS 13.0, *) {
-            PetFocusedImageView.cropper.crop(originalImage, aspectRatio: bounds.size) { finalImage, error in
+            PetFocusedImageView.cropper.crop(originalImage, aspectRatio: bounds.size) { finalImage, _ in
                 guard let finalImage = finalImage else { return }
                 DispatchQueue.main.async {
                     super.image = finalImage
