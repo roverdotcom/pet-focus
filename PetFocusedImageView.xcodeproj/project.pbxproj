@@ -23,6 +23,8 @@
 		0496F2D522CC520700974366 /* PetFocusedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496F2B422CC50D900974366 /* PetFocusedImageView.swift */; };
 		0496F2D622CC520700974366 /* PetObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496F2B222CC50D900974366 /* PetObservation.swift */; };
 		0496F2D722CC520700974366 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496F2B522CC50D900974366 /* UIImageExtensions.swift */; };
+		6413F93322E1243200D7E7DD /* ImageRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6413F93122E1242100D7E7DD /* ImageRequestHandler.swift */; };
+		6413F93622E12DF700D7E7DD /* RecognizedObjectObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6413F93422E12C5E00D7E7DD /* RecognizedObjectObservation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		0496F2C522CC516000974366 /* PetFocus.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PetFocus.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0496F2C722CC516000974366 /* PetFocus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PetFocus.h; path = Framework/PetFocus.h; sourceTree = "<group>"; };
 		0496F2C822CC516000974366 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Framework/Info.plist; sourceTree = "<group>"; };
+		6413F93122E1242100D7E7DD /* ImageRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageRequestHandler.swift; path = PetFocus/ImageRequestHandler.swift; sourceTree = "<group>"; };
+		6413F93422E12C5E00D7E7DD /* RecognizedObjectObservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecognizedObjectObservation.swift; path = PetFocus/RecognizedObjectObservation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,10 +160,12 @@
 			isa = PBXGroup;
 			children = (
 				0496F2B122CC50D900974366 /* CGGeometryExtensions.swift */,
+				6413F93122E1242100D7E7DD /* ImageRequestHandler.swift */,
 				0496F2B322CC50D900974366 /* PetDetectionOperation.swift */,
 				0496F2B622CC50D900974366 /* PetFocusedImageCropper.swift */,
 				0496F2B422CC50D900974366 /* PetFocusedImageView.swift */,
 				0496F2B222CC50D900974366 /* PetObservation.swift */,
+				6413F93422E12C5E00D7E7DD /* RecognizedObjectObservation.swift */,
 				0496F2B522CC50D900974366 /* UIImageExtensions.swift */,
 			);
 			path = Sources;
@@ -347,6 +353,8 @@
 			files = (
 				0496F2D522CC520700974366 /* PetFocusedImageView.swift in Sources */,
 				0496F2D622CC520700974366 /* PetObservation.swift in Sources */,
+				6413F93322E1243200D7E7DD /* ImageRequestHandler.swift in Sources */,
+				6413F93622E12DF700D7E7DD /* RecognizedObjectObservation.swift in Sources */,
 				0496F2D222CC520700974366 /* CGGeometryExtensions.swift in Sources */,
 				0496F2D722CC520700974366 /* UIImageExtensions.swift in Sources */,
 				0496F2D322CC520700974366 /* PetDetectionOperation.swift in Sources */,

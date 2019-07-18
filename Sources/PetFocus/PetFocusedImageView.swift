@@ -5,6 +5,8 @@ import UIKit
 import Vision
 
 @objc public class PetFocusedImageView: UIImageView {
+    var cropsToPets: Bool = true
+
     public override var image: UIImage? {
         get { return super.image }
         set(newImage) {
@@ -21,8 +23,8 @@ import Vision
         }
     }
 
-    private func setImage(from originalImage: UIImage) {
-        if #available(iOS 13.0, *) {
+    func setImage(from originalImage: UIImage) {
+        if #available(iOS 13.0, *), cropsToPets == true {
             PetFocusedImageView.cropper.crop(originalImage, aspectRatio: bounds.size) { finalImage, _ in
                 guard let finalImage = finalImage else { return }
                 DispatchQueue.main.async {

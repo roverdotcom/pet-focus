@@ -7,7 +7,7 @@ import Vision
 
 @available(iOS 13.0, *)
 class PetDetectionOperation: Operation {
-    init(image: UIImage, completionHandler: @escaping (([PetObservation]?, Error?) -> Void)) {
+    required init(image: UIImage, completionHandler: @escaping (([PetObservation]?, Error?) -> Void)) {
         self.image = image
         self.completionHandler = completionHandler
         super.init()
@@ -51,9 +51,9 @@ class PetDetectionOperation: Operation {
     // MARK: Boilerplate
 
     private let image: UIImage
-    private let completionHandler: ([PetObservation]?, Error?) -> Void
+    let completionHandler: ([PetObservation]?, Error?) -> Void
 
-    private lazy var imageRequestHandler: VNImageRequestHandler? = {
+    lazy var imageRequestHandler: ImageRequestHandler? = {
         guard let cgImage = image.cgImage else {
             assertionFailure("No CGImage available for detection source image")
             return nil

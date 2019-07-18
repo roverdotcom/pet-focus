@@ -2,17 +2,21 @@
 //  Copyright © 2019 Geoff Pado. All rights reserved.
 
 import UIKit
-import Vision
 
 @available(iOS 12.0, *)
 struct PetObservation: Equatable {
-    init(_ petObservation: VNRecognizedObjectObservation, in image: UIImage) {
+    init(_ petObservation: RecognizedObjectObservation, in image: UIImage) {
         let boundingBox = petObservation.boundingBox
         let imageSize = image.size * image.scale
         self.bounds = CGRect.flippedRect(from: boundingBox, scaledTo: imageSize)
 
         let observationUUID = petObservation.uuid
         self.uuid = observationUUID
+    }
+
+    init(bounds: CGRect, uuid: UUID) {
+        self.bounds = bounds
+        self.uuid = uuid
     }
 
     let bounds: CGRect
