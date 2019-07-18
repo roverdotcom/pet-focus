@@ -21,7 +21,7 @@
 		0496F2D322CC520700974366 /* PetDetectionOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496F2B322CC50D900974366 /* PetDetectionOperation.swift */; };
 		0496F2D422CC520700974366 /* PetFocusedImageCropper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496F2B622CC50D900974366 /* PetFocusedImageCropper.swift */; };
 		0496F2D522CC520700974366 /* PetFocusedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496F2B422CC50D900974366 /* PetFocusedImageView.swift */; };
-		0496F2D622CC520700974366 /* PetOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496F2B222CC50D900974366 /* PetOperation.swift */; };
+		0496F2D622CC520700974366 /* PetObservation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496F2B222CC50D900974366 /* PetObservation.swift */; };
 		0496F2D722CC520700974366 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0496F2B522CC50D900974366 /* UIImageExtensions.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +69,7 @@
 		042C6A6822B8B357006F914E /* PetFocusedImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetFocusedImageViewTests.swift; sourceTree = "<group>"; };
 		042C6A6A22B8B357006F914E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0496F2B122CC50D900974366 /* CGGeometryExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CGGeometryExtensions.swift; path = PetFocus/CGGeometryExtensions.swift; sourceTree = "<group>"; };
-		0496F2B222CC50D900974366 /* PetOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PetOperation.swift; path = PetFocus/PetOperation.swift; sourceTree = "<group>"; };
+		0496F2B222CC50D900974366 /* PetObservation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PetObservation.swift; path = PetFocus/PetObservation.swift; sourceTree = "<group>"; };
 		0496F2B322CC50D900974366 /* PetDetectionOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PetDetectionOperation.swift; path = PetFocus/PetDetectionOperation.swift; sourceTree = "<group>"; };
 		0496F2B422CC50D900974366 /* PetFocusedImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PetFocusedImageView.swift; path = PetFocus/PetFocusedImageView.swift; sourceTree = "<group>"; };
 		0496F2B522CC50D900974366 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageExtensions.swift; path = PetFocus/UIImageExtensions.swift; sourceTree = "<group>"; };
@@ -159,7 +159,7 @@
 				0496F2B322CC50D900974366 /* PetDetectionOperation.swift */,
 				0496F2B622CC50D900974366 /* PetFocusedImageCropper.swift */,
 				0496F2B422CC50D900974366 /* PetFocusedImageView.swift */,
-				0496F2B222CC50D900974366 /* PetOperation.swift */,
+				0496F2B222CC50D900974366 /* PetObservation.swift */,
 				0496F2B522CC50D900974366 /* UIImageExtensions.swift */,
 			);
 			path = Sources;
@@ -346,7 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0496F2D522CC520700974366 /* PetFocusedImageView.swift in Sources */,
-				0496F2D622CC520700974366 /* PetOperation.swift in Sources */,
+				0496F2D622CC520700974366 /* PetObservation.swift in Sources */,
 				0496F2D222CC520700974366 /* CGGeometryExtensions.swift in Sources */,
 				0496F2D722CC520700974366 /* UIImageExtensions.swift in Sources */,
 				0496F2D322CC520700974366 /* PetDetectionOperation.swift in Sources */,
