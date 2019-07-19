@@ -17,7 +17,7 @@
                BlueprintIdentifier = "042C6A4D22B8B354006F914E"
                BuildableName = "Demo.app"
                BlueprintName = "Demo"
-               ReferencedContainer = "container:PetFocusedImageView.xcodeproj">
+               ReferencedContainer = "container:PetFocus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "042C6A6322B8B357006F914E"
-               BuildableName = "DemoTests.xctest"
-               BlueprintName = "DemoTests"
-               ReferencedContainer = "container:PetFocusedImageView.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -57,7 +47,7 @@
             BlueprintIdentifier = "042C6A4D22B8B354006F914E"
             BuildableName = "Demo.app"
             BlueprintName = "Demo"
-            ReferencedContainer = "container:PetFocusedImageView.xcodeproj">
+            ReferencedContainer = "container:PetFocus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -74,7 +64,7 @@
             BlueprintIdentifier = "042C6A4D22B8B354006F914E"
             BuildableName = "Demo.app"
             BlueprintName = "Demo"
-            ReferencedContainer = "container:PetFocusedImageView.xcodeproj">
+            ReferencedContainer = "container:PetFocus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
