@@ -4,6 +4,8 @@ PetFocus is an image view that automatically centers images on any pets (dogs or
 
 PetFocus is usable in projects deployed on iOS 10 and up, but will only perform pet-focused cropping on iOS 13. When running on versions older than iOS 13, PetFocus will fall back to the default cropping behavior.
 
+Read more about the creation of PetFocus on the [Rover Engineering blog](https://www.rover.com/blog/engineering/post/detecting-pets-with-the-ios-vision-framework/).
+
 ## Installing
 
 ### Swift Package Manager
