@@ -14,20 +14,20 @@ class PetDetectionOperation: Operation {
     }
 
     override func start() {
-        let imageRequest = VNDetectAnimalRectanglesRequest { [weak self] request, error in
+        let imageRequest = VNDetectAnimalRectanglesRequest { [unowned self] request, error in
             guard let results = request.results else {
-                self?.completionHandler(nil, error)
-                self?._finished = true
-                self?._executing = false
+                self.completionHandler(nil, error)
+                self._finished = true
+                self._executing = false
                 return
             }
 
             let recognizedObjectObservations = results.compactMap { $0 as? VNRecognizedObjectObservation }
-            let petObservations = recognizedObjectObservations.compactMap { PetObservation($0, in: self!.image)}
-            self?.completionHandler(petObservations, nil)
+            let petObservations = recognizedObjectObservations.compactMap { PetObservation($0, in: self.image)}
+            self.completionHandler(petObservations, nil)
 
-            self?._finished = true
-            self?._executing = false
+            self._finished = true
+            self._executing = false
         }
 
         do {
